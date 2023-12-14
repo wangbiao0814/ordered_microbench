@@ -1,0 +1,15 @@
+[submodule "competitor/ALEX"]
+	path = competitor/ALEX
+	url = https://github.com/microsoft/ALEX.git
+[submodule "competitor/libart"]
+	path = competitor/libart
+	url = https://github.com/armon/libart.git
+[submodule "competitor/libcuckoo"]
+	path = competitor/libcuckoo
+	url = https://github.com/efficient/libcuckoo.git
+[submodule "wormhole"]
+	path = wormhole
+	url = https://github.com/wuxb45/wormhole.git
+[submodule "competitor/wormhole"]
+	path = competitor/wormhole
+	url = https://github.com/wuxb45/wormhole.git
