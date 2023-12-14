@@ -1,0 +1,43 @@
+workload, keytype, filename
+####################################
+# 50% read / 50 % update           #
+####################################
+workloada, randint
+workloada, face, ./dataset/fb_64M_uint64.txt
+workloada, osm, ./dataset/osm_cellids_64M_uint64.txt
+workloada, wiki, ./dataset/wiki_ts_64M_uint64.txt
+# ####################################
+# # 95% read / 5 %  update           #
+# ####################################
+workloadb, randint
+workloadb, face, ./dataset/fb_64M_uint64.txt
+workloadb, osm, ./dataset/osm_cellids_64M_uint64.txt
+workloadb, wiki, ./dataset/wiki_ts_64M_uint64.txt
+# ####################################
+# # readonly                         #
+# ####################################
+workloadc, randint
+workloadc, face, ./dataset/fb_64M_uint64.txt
+workloadc, osm, ./dataset/osm_cellids_64M_uint64.txt
+workloadc, wiki, ./dataset/wiki_ts_64M_uint64.txt
+# ####################################
+# # 95% read / 5 % insert            #
+# ####################################
+workloadd, randint
+workloadd, face, ./dataset/fb_64M_uint64.txt
+workloadd, osm, ./dataset/osm_cellids_64M_uint64.txt
+workloadd, wiki, ./dataset/wiki_ts_64M_uint64.txt
+# ####################################
+# # 95% scan / 5 % insert            #
+# ####################################
+workloade, randint
+workloade, face, ./dataset/fb_64M_uint64.txt
+workloade, osm, ./dataset/osm_cellids_64M_uint64.txt
+workloade, wiki, ./dataset/wiki_ts_64M_uint64.txt
+# ####################################
+# # 50% read / 50 % readmodifywrite  #
+# ####################################
+workloadf, randint
+workloadf, face, ./dataset/fb_64M_uint64.txt
+workloadf, osm, ./dataset/osm_cellids_64M_uint64.txt
+workloadf, wiki, ./dataset/wiki_ts_64M_uint64.txt
