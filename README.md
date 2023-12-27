@@ -26,7 +26,10 @@ STX-Btree and ALEX both provide the head-only way to compile.
 The used dataset can be download from https://www.kaggle.com/datasets/wang284751873/real-world-datasets/
 
 ## Generate Workload
+    $ cd ./dataset && make
+    $ ./generate_realworld_dataset && cd ..
     $ python generate.py all_workload
+    $ ./generate_systhetic_dataset
 
 ## Benchmark
     $ make && ./run_ablation.sh && ./run_ycsb.sh && ./run_others.sh
