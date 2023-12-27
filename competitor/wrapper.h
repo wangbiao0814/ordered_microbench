@@ -2,7 +2,7 @@
 #define _WRAPPER_H_
 
 #include <stdint.h>
-
+#include <vector>
 
 
 #ifdef U64_KEY_U64_VALUE
@@ -28,6 +28,7 @@ typedef struct
     uint64_t numTxns;
     uint16_t numTxnThread;
     uint64_t experimentID;
+    double ratio;
     char initFileName[256];
     char txnFileName[256];                             
 }ExperimentConfig;
@@ -58,8 +59,7 @@ void construct_container(void* container, KEY_TYPE* keyArray, VAL_TYPE* valueArr
 
 RETURN_STATUS insert_KV(void *container, KEY_TYPE key, VAL_TYPE value);
 VAL_TYPE get_KV(void *container, KEY_TYPE key);
+std::vector<VAL_TYPE> range_KV(void *container, KEY_TYPE key, int range);
 void delete_KV(void *container, KEY_TYPE key);
-
-uint64_t range_KV(void *container, KEY_TYPE key, int range);
 
 #endif
