@@ -7,7 +7,7 @@ LIBS_ART = -L./competitor/libart/src -lart
 
 INCS = -I./competitor/ -I./dataset/ -I./benchmark/ -I./dataset/cpp_random_distributions
 
-INCS_CUCKOOHT = -I./competitor/CuckooHashTable/install/include
+INCS_CUCKOOHT = -I./competitor/libcuckoo/install/include
 INCS_WORMHOLE = -I./competitor/wormhole
 INCS_STXBTREE = -I./competitor/stx
 INCS_ART = -I./competitor/libart/src

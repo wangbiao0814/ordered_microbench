@@ -9,7 +9,8 @@ vIndex is an adaptive stratified tree inspired by van Boas Emde tree(vEB tree) a
   
 Current implementation only support 64-bit intergers.
 ## Build
-
+    $ git submodule init 
+    $ git submodule update
 ### Cuckoo Hash
     $ cmake -DCMAKE_INSTALL_PREFIX=../install -DBUILD_EXAMPLES=1 -DBUILD_TESTS=1 ..
     $ make all
